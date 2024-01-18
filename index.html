@@ -48,39 +48,54 @@
       </section>
 
       <section>
-        <h2>Order Form</h2> 
-        <label>Your name</label>
-        <input type="text" name="sender" />
+        <h2>Order Form</h2>
+        <form>
+        <div class="form-group">
+          <label>Your name</label>
+          <input type="text" name="sender" />
+      </div>
         
-        <label>Who are we sending this to?</label>
-        <input type="text" name="recipient">
+        <div class="form-group">
+          <label>Who are we sending this to?</label>
+          <input type="text" name="recipient">
+      </div>
          
-        <label>Choose a Smoothie</label>
-        <select name="smoothie">
-          <option value="Choose yo option">Please choose an option</option>
-          <option value="Super Strawberries Delicious">Super Strawberries Delicious</option>
-          <option value="White Grape Ranger">White Grape Ranger</option>
-          <option value="Blueberry Blast">Blueberry Blast</option>
+        <div class="form-group">
+          <label>Choose a Smoothie</label>
+          <select name="smoothie">
+            <option value="Choose yo option">Please choose an option</option>
+            <option value="Super Strawberries Delicious">Super Strawberries Delicious</option>
+            <option value="White Grape Ranger">White Grape Ranger</option>
+            <option value="Blueberry Blast">Blueberry Blast</option>
         </select>
+      </div>
 
-        <span>When should we deliver?</span>
-        
-        <input type="radio" name="delivery-time" value="asap">
-        <label>As soon as possible </label>
+        <div class="form-group">
+          <span>When should we deliver?</span>
+          <input type="radio" name="delivery-time" value="asap">
+          <label class="inline-label">As soon as possible </label>
 
-        <input type="radio" name="delivery-time" value="am">
-        <label>Morning</label>
+          <input type="radio" name="delivery-time" value="am">
+          <label class="inline-label">Morning</label>
 
-        <input type="radio" name="delivery-time" value="pm">
-        <label>Afternoon</label>
+          <input type="radio" name="delivery-time" value="pm">
+          <label class="inline-label">Afternoon</label>
+      </div>
       
-        <label>Enter your message</label>
-        <textarea name="Enter-Message"></textarea>
+        <div class="form-group">
+          <label>Enter your message</label>
+          <textarea name="Enter-Message"></textarea>
+      </div>
         
-        <label>Subscribe to our newsletter? </label>
-        <input type="checkbox" name="sub">
+        <div class="form-group">
+          <label class="inline-label">Subscribe to our newsletter? </label>
+          <input type="checkbox" name="sub">
+      </div>
         
-        <button type="submit">Submit</button>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+      </div>
+        </form> 
       </section>
     </main>
   </body>
